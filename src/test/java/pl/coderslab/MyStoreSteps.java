@@ -94,6 +94,12 @@ public class MyStoreSteps {
         Assertions.assertEquals("Address successfully added!", addressesPage.getTextAddressSuccessAlert());
     }
 
+    @Then("User can see first address")
+    public void userCanSeeFirstAddress() {
+        Assertions.assertTrue(addressesPage.firstAddressIsVisible(), "New address tile should be visible");
+        Assertions.assertEquals("Address successfully added!", addressesPage.getTextAddressSuccessAlert());
+    }
+
     @And("User verify created address {string}, {string}, {string}, {string}, {string}, {string}, {string}, {string}")
     public void userVerifyCreatedAddress(String alias, String address, String city, String zipPostalCode, String country, String phone, String firstName, String lastName) {
         String expectedAddress = firstName + " " + lastName + "\n" + address + "\n" + city + "\n" + zipPostalCode + "\n" + country + "\n" + phone;
@@ -101,6 +107,12 @@ public class MyStoreSteps {
         Assertions.assertEquals(expectedAddress, addressesPage.getNewAddressAsText(), "Addresses should be the same");
     }
 
+    @And("User verify first address {string}, {string}, {string}, {string}, {string}, {string}, {string}, {string}")
+    public void userVerifyFirstAddress(String alias, String address, String city, String zipPostalCode, String country, String phone, String firstName, String lastName) {
+        String expectedAddress = firstName + " " + lastName + "\n" + address + "\n" + city + "\n" + zipPostalCode + "\n" + country + "\n" + phone;
+        Assertions.assertEquals(alias, addressesPage.getTextFromFirstAddressAlias(), "Aliases should be the same");
+        Assertions.assertEquals(expectedAddress, addressesPage.getFirstAddressAsText(), "Addresses should be the same");
+    }
 
     @And("User remove new address")
     public void userRemovesNewAddress() {
@@ -226,6 +238,7 @@ public class MyStoreSteps {
 //Copy file at destination
         FileUtils.copyFile(SrcFile, DestFile);
     }
+
 
 }
 

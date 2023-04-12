@@ -20,4 +20,4 @@ Feature: Shop purchasing process
     And User can see status of the order
     Examples:
       | email                  | password               | size | quantity | alias      | address      | city   | zip/postal code | country        | phone     | first name | last name |
-      | test@test.coderslab.pl | test@test.coderslab.pl | S    | 2        | My First Address | 12 Wide Street | York | 11222         | United Kingdom | 123456789 | Tester     | ISTQB     |
+      | johncoal@test.tv| superpasswd | S    | 1        | My First Address | 12 Wide Street | York | 11222         | United Kingdom | 123456789 | John     | Coal    |

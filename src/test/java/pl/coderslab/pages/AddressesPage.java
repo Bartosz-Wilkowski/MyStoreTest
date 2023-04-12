@@ -28,6 +28,10 @@ public class AddressesPage {
     @FindBy(css = ".logout")
     private WebElement logoutBtn;
 
+    @FindBy(xpath = "(//article[@class='address'])/div/h4")
+    private WebElement firstAddressAlias;
+
+
     public AddressesPage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
@@ -55,8 +59,17 @@ public class AddressesPage {
         return address.getText();
     }
 
+    public String getFirstAddressAsText() {
+        WebElement address = addresses.get(0);
+        return address.getText();
+    }
+
     public String getTextFromNewAddressAlias() {
         return newAddressAlias.getText();
+    }
+
+    public String getTextFromFirstAddressAlias() {
+        return firstAddressAlias.getText();
     }
 
     public void removeNewAddress() {

@@ -4,28 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="997fa7cf-3f65-42d1-83f0-75ed07e191dd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cucumber/features/shop-purchasing-process.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cucumber/features/user-account-edit.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pl/coderslab/MyStoreSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pl/coderslab/MyStoreTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pl/coderslab/pages/AddressesPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pl/coderslab/pages/AuthPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pl/coderslab/pages/CartPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pl/coderslab/pages/CheckoutPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pl/coderslab/pages/MainPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pl/coderslab/pages/NewAddressPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pl/coderslab/pages/OrderConfirmationPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pl/coderslab/pages/OrderHistoryPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pl/coderslab/pages/ProductPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pl/coderslab/pages/UserAccountPage.java" afterDir="false" />
+    <list default="true" id="997fa7cf-3f65-42d1-83f0-75ed07e191dd" name="Changes" comment="finalexam">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out.html" beforeDir="false" afterPath="$PROJECT_DIR$/out.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cucumber/features/shop-purchasing-process.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/cucumber/features/shop-purchasing-process.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cucumber/features/user-account-edit.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/cucumber/features/user-account-edit.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/coderslab/MyStoreSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/coderslab/MyStoreSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/coderslab/MyStoreTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/coderslab/MyStoreTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/coderslab/pages/AddressesPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/coderslab/pages/AddressesPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/coderslab/pages/ProductPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/coderslab/pages/ProductPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,16 +60,16 @@
       <recent name="D:\Testing\CodersLab\FinalExam\src\test\java" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MyStoreTest">
-    <configuration name="Scenario: User add new address to existing one" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Cucumber Java.Scenario: User add first address">
+    <configuration name="Scenario: User add first address" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/cucumber/features/user-account-edit.feature" />
       <option name="GLUE" value="pl.coderslab" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="FinalExam" />
-      <option name="NAME_FILTER" value="^User add new address to existing one$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^User add new address to existing one$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: User add new address to existing one" />
+      <option name="NAME_FILTER" value="^User add first address$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^User add first address$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: User add first address" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -94,15 +81,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: User adds first address" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: User add new address to existing one" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/cucumber/features/user-account-edit.feature" />
       <option name="GLUE" value="pl.coderslab" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="FinalExam" />
-      <option name="NAME_FILTER" value="^User adds first address$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^User adds first address$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: User adds first address" />
+      <option name="NAME_FILTER" value="^User add new address to existing one$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^User add new address to existing one$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: User add new address to existing one" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -189,11 +176,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Scenario: User add first address" />
+        <item itemvalue="Cucumber Java.Scenario: User add new address to existing one" />
         <item itemvalue="JUnit.MyStoreTest" />
         <item itemvalue="Cucumber Java.Scenario: User purchase product from online shop" />
-        <item itemvalue="Cucumber Java.Scenario: User add new address to existing one" />
         <item itemvalue="Cucumber Java.Scenario: User adds new address to existing one" />
-        <item itemvalue="Cucumber Java.Scenario: User adds first address" />
       </list>
     </recent_temporary>
   </component>
@@ -206,6 +193,36 @@
       <option name="presentableId" value="Default" />
       <updated>1680634037790</updated>
     </task>
+    <task id="LOCAL-00001" summary="finalexam">
+      <created>1681311451572</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1681311451572</updated>
+    </task>
+    <task id="LOCAL-00002" summary="finalexam">
+      <created>1681311706669</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1681311706669</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="finalexam" />
+    <option name="LAST_COMMIT_MESSAGE" value="finalexam" />
   </component>
 </project>
