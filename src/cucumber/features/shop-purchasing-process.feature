@@ -2,21 +2,21 @@ Feature: Shop purchasing process
   @purchase
   Scenario Outline: User purchase product from online shop
     Given User is on main page
-    And User go to login page
-    And User log in using "<email>" and "<password>"
-    And User go to main page
-    When User choose Hummingbird Printed Sweater on main page
-    And User check discount "SAVE 20%"
-    And User select size "<size>"
-    And User select <quantity> items
-    And User add products to cart
-    And User go to checkout
-    And User confirm address on checkout "<alias>", "<address>", "<city>", "<zip/postal code>", "<country>", "<phone>", "<first name>", "<last name>"
-    And User select type of delivery
-    And User select type of payment
-    And User confirm order
-    Then User take a screenshot
-    And User go to order history details
+    And User goes to login page
+    And User logs in using "<email>" and "<password>"
+    And User goes to main page
+    When User chooses Hummingbird Printed Sweater on main page
+    And User checks discount "SAVE 20%"
+    And User selects size "<size>"
+    And User selects <quantity> items
+    And User adds products to cart
+    And User goes to checkout
+    And User confirms address on checkout "<alias>", "<address>", "<city>", "<zip/postal code>", "<country>", "<phone>", "<first name>", "<last name>"
+    And User selects type of delivery
+    And User selects type of payment
+    And User confirms order
+    Then User takes a screenshot
+    And User goes to order history details
     And User can see status of the order
     Examples:
       | email                  | password               | size | quantity | alias      | address      | city   | zip/postal code | country        | phone     | first name | last name |

@@ -39,27 +39,27 @@ public class MyStoreSteps {
     }
 
 
-    @And("User go to login page")
+    @And("User goes to login page")
     public void userGoToLoginPage() {
         MainPage mainPage = new MainPage(driver);
         mainPage.signInWithPage();
     }
 
 
-    @And("User log in using {string} and {string}")
+    @And("User logs in using {string} and {string}")
     public void userLogInUsingAnd(String email, String password) {
         AuthPage authPage = new AuthPage(driver);
         authPage.loginAs(email, password);
     }
 
 
-    @And("User go to addresses page by addresses tile")
+    @And("User goes to addresses page by addresses tile")
     public void userGoToAddressesPage() {
         userAccountPage = new UserAccountPage(driver);
         userAccountPage.goToUsersAddressesPageByTile();
     }
 
-    @And("User go to addresses page by footer")
+    @And("User goes to addresses page by footer")
     public void userGoToAddressesPageByFooter() {
         userAccountPage = new UserAccountPage(driver);
         userAccountPage.goToUsersAddressesPageByFooter();
@@ -73,14 +73,14 @@ public class MyStoreSteps {
     }
 
 
-    @When("User create new address")
+    @When("User creates new address")
     public void userCreateNewAddress() {
         addressesPage = new AddressesPage(driver);
         addressesPage.createNewAddress();
     }
 
 
-    @And("User enter new address {string}, {string}, {string}, {string}, {string}, {string}")
+    @And("User enters new address {string}, {string}, {string}, {string}, {string}, {string}")
     public void userEnterNewAddress(String alias, String address, String city, String zipPostalCode, String country, String phone) {
         NewAddressPage newAddressPage = new NewAddressPage(driver);
         newAddressPage.provideUserAddressData(alias, address, city, zipPostalCode, country, phone);
@@ -100,21 +100,21 @@ public class MyStoreSteps {
         Assertions.assertEquals("Address successfully added!", addressesPage.getTextAddressSuccessAlert());
     }
 
-    @And("User verify created address {string}, {string}, {string}, {string}, {string}, {string}, {string}, {string}")
+    @And("User verifies created address {string}, {string}, {string}, {string}, {string}, {string}, {string}, {string}")
     public void userVerifyCreatedAddress(String alias, String address, String city, String zipPostalCode, String country, String phone, String firstName, String lastName) {
         String expectedAddress = firstName + " " + lastName + "\n" + address + "\n" + city + "\n" + zipPostalCode + "\n" + country + "\n" + phone;
         Assertions.assertEquals(alias, addressesPage.getTextFromNewAddressAlias(), "Aliases should be the same");
         Assertions.assertEquals(expectedAddress, addressesPage.getNewAddressAsText(), "Addresses should be the same");
     }
 
-    @And("User verify first address {string}, {string}, {string}, {string}, {string}, {string}, {string}, {string}")
+    @And("User verifies first address {string}, {string}, {string}, {string}, {string}, {string}, {string}, {string}")
     public void userVerifyFirstAddress(String alias, String address, String city, String zipPostalCode, String country, String phone, String firstName, String lastName) {
         String expectedAddress = firstName + " " + lastName + "\n" + address + "\n" + city + "\n" + zipPostalCode + "\n" + country + "\n" + phone;
         Assertions.assertEquals(alias, addressesPage.getTextFromFirstAddressAlias(), "Aliases should be the same");
         Assertions.assertEquals(expectedAddress, addressesPage.getFirstAddressAsText(), "Addresses should be the same");
     }
 
-    @And("User remove new address")
+    @And("User removes new address")
     public void userRemovesNewAddress() {
         addressesPage.removeNewAddress();
     }
@@ -127,12 +127,12 @@ public class MyStoreSteps {
     }
 
 
-    @And("User log out")
+    @And("User logs out")
     public void userLogsOut() {
         addressesPage.userLogOut();
     }
 
-    @And("User close the browser")
+    @And("User closes the browser")
     public void userCloseTheBrowser() {
         driver.quit();
     }
@@ -142,40 +142,40 @@ public class MyStoreSteps {
 
     private CheckoutPage checkoutPage;
 
-    @And("User go to main page")
+    @And("User goes to main page")
     public void userGoToMainPage() {
         userAccountPage = new UserAccountPage(driver);
         userAccountPage.returnToMainPage();
     }
 
-    @And("User choose Hummingbird Printed Sweater on main page")
+    @And("User chooses Hummingbird Printed Sweater on main page")
     public void userChooseHummingBirdPrintedSweater() {
         MainPage mainPage = new MainPage(driver);
         mainPage.selectHummingbirdPrintedSweater();
         productPage = new ProductPage(driver);
     }
 
-    @And("User check discount {string}")
+    @And("User checks discount {string}")
     public void userCheckDiscount(String discount) {
         Assertions.assertEquals(discount, productPage.getDiscountText(), "Discount should be" + discount);
     }
 
-    @And("User select size {string}")
+    @And("User selects size {string}")
     public void userSelectSize(String selectedSize) {
         productPage.selectSize(selectedSize);
     }
 
-    @And("User select {int} items")
+    @And("User selects {int} items")
     public void userSelectItems(int quantity) {
         productPage.selectQuantity(quantity);
     }
 
-    @And("User add products to cart")
+    @And("User adds products to cart")
     public void userAddProductsToCart() {
         productPage.addItemsToCart();
     }
 
-    @And("User go to checkout")
+    @And("User goes to checkout")
     public void userGoToCheckout() {
         productPage.proceedToCheckout();
         CartPage cartPage = new CartPage(driver);
@@ -183,7 +183,7 @@ public class MyStoreSteps {
         checkoutPage = new CheckoutPage(driver);
     }
 
-    @And("User confirm address on checkout {string}, {string}, {string}, {string}, {string}, {string}, {string}, {string}")
+    @And("User confirms address on checkout {string}, {string}, {string}, {string}, {string}, {string}, {string}, {string}")
     public void userConfirmAddressOnCheckout(String alias, String address, String city, String zipPostalCode, String country, String phone, String firstName, String lastName) {
         String expectedAddress = firstName + " " + lastName + "\n" + address + "\n" + city + "\n" + zipPostalCode + "\n" + country + "\n" + phone;
         Assertions.assertEquals(alias, checkoutPage.getTextFromAddressAlias(), "Aliases should be the same");
@@ -191,28 +191,28 @@ public class MyStoreSteps {
         checkoutPage.confirmAddressOnCheckout();
     }
 
-    @And("User select type of delivery")
+    @And("User selects type of delivery")
     public void userSelectTypeOfDelivery() {
         checkoutPage.selectSelfPickUpDelivery();
     }
 
-    @And("User select type of payment")
+    @And("User selects type of payment")
     public void userSelectTypeOfPayment() {
         checkoutPage.selectPayByCheckPayment();
         checkoutPage.agreeToTermsOfService();
     }
 
-    @And("User confirm order")
+    @And("User confirms order")
     public void userConfirmOrder() {
         checkoutPage.placeOrder();
     }
 
-    @Then("User take a screenshot")
+    @Then("User takes a screenshot")
     public void userTakeAScreenshot() throws Exception {
         this.takeSnapShot(driver, "C:\\Users\\Bartek\\Pictures\\Selenium\\test.png");
     }
 
-    @And("User go to order history details")
+    @And("User goes to order history details")
     public void userGoToOrderHistoryDetails() {
         OrderConfirmationPage orderConfirmationPage = new OrderConfirmationPage(driver);
         totalValue = orderConfirmationPage.getTotalValue();

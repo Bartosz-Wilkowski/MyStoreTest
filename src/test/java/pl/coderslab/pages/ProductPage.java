@@ -39,8 +39,9 @@ public class ProductPage {
     }
 
     public void selectQuantity(int quantity) {
-        if (quantity != 1){
-        quantityInput.sendKeys(Integer.toString(quantity));}
+        if (quantity != 1) {
+            quantityInput.sendKeys(Integer.toString(quantity));
+        }
     }
 
     public void addItemsToCart() {

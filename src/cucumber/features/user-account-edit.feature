@@ -3,18 +3,18 @@ Feature: User account edit
 @newAddress
   Scenario Outline: User add new address to existing one
     Given User is on main page
-    And User go to login page
-    And User log in using "<email>" and "<password>"
-    And User go to addresses page by addresses tile
+    And User goes to login page
+    And User logs in using "<email>" and "<password>"
+    And User goes to addresses page by addresses tile
     And User can see there is already one address
-    When User create new address
-    And User enter new address "<alias>", "<address>", "<city>", "<zip/postal code>", "<country>", "<phone>"
+    When User creates new address
+    And User enters new address "<alias>", "<address>", "<city>", "<zip/postal code>", "<country>", "<phone>"
     Then User can see new address
-    And User verify created address "<alias>", "<address>", "<city>", "<zip/postal code>", "<country>", "<phone>", "<first name>", "<last name>"
-    And User remove new address
+    And User verifies created address "<alias>", "<address>", "<city>", "<zip/postal code>", "<country>", "<phone>", "<first name>", "<last name>"
+    And User removes new address
     And User can see the address was removed
-    And User log out
-    And User close the browser
+    And User logs out
+    And User closes the browser
 
     Examples:
       | email                  | password               | alias      | address      | city   | zip/postal code | country        | phone     |first name|last name|
@@ -24,15 +24,15 @@ Feature: User account edit
 @firstAddress
   Scenario Outline: User add first address
     Given User is on main page
-    And User go to login page
-    And User log in using "<email>" and "<password>"
-    And User go to addresses page by footer
-    When User create new address
-    And User enter new address "<alias>", "<address>", "<city>", "<zip/postal code>", "<country>", "<phone>"
+    And User goes to login page
+    And User logs in using "<email>" and "<password>"
+    And User goes to addresses page by footer
+    When User creates new address
+    And User enters new address "<alias>", "<address>", "<city>", "<zip/postal code>", "<country>", "<phone>"
     Then User can see first address
-    And User verify first address "<alias>", "<address>", "<city>", "<zip/postal code>", "<country>", "<phone>", "<first name>", "<last name>"
-    And User log out
-    And User close the browser
+    And User verifies first address "<alias>", "<address>", "<city>", "<zip/postal code>", "<country>", "<phone>", "<first name>", "<last name>"
+    And User logs out
+    And User closes the browser
 
     Examples:
       | email                  | password               | alias      | address      | city   | zip/postal code | country        | phone     |first name|last name|

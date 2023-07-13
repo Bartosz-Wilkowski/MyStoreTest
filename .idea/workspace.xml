@@ -4,14 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="997fa7cf-3f65-42d1-83f0-75ed07e191dd" name="Changes" comment="finalexam">
+    <list default="true" id="997fa7cf-3f65-42d1-83f0-75ed07e191dd" name="Changes" comment="n/a">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out.html" beforeDir="false" afterPath="$PROJECT_DIR$/out.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cucumber/features/shop-purchasing-process.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/cucumber/features/shop-purchasing-process.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cucumber/features/user-account-edit.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/cucumber/features/user-account-edit.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pl/coderslab/MyStoreSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/coderslab/MyStoreSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pl/coderslab/MyStoreTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/coderslab/MyStoreTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pl/coderslab/pages/AddressesPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/coderslab/pages/AddressesPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pl/coderslab/pages/ProductPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/coderslab/pages/ProductPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -60,13 +60,13 @@
       <recent name="D:\Testing\CodersLab\FinalExam\src\test\java" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: User add first address">
+  <component name="RunManager" selected="JUnit.MyStoreTest">
     <configuration name="Scenario: User add first address" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/cucumber/features/user-account-edit.feature" />
       <option name="GLUE" value="pl.coderslab" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="FinalExam" />
+      <module name="MyStoreTest" />
       <option name="NAME_FILTER" value="^User add first address$" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^User add first address$&quot;" />
       <option name="SUGGESTED_NAME" value="Scenario: User add first address" />
@@ -86,7 +86,7 @@
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/cucumber/features/user-account-edit.feature" />
       <option name="GLUE" value="pl.coderslab" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="FinalExam" />
+      <module name="MyStoreTest" />
       <option name="NAME_FILTER" value="^User add new address to existing one$" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^User add new address to existing one$&quot;" />
       <option name="SUGGESTED_NAME" value="Scenario: User add new address to existing one" />
@@ -106,7 +106,7 @@
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/cucumber/features/user-account-edit.feature" />
       <option name="GLUE" value="pl.coderslab" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="FinalExam" />
+      <module name="MyStoreTest" />
       <option name="NAME_FILTER" value="^User adds new address to existing one$" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^User adds new address to existing one$&quot;" />
       <option name="SUGGESTED_NAME" value="Scenario: User adds new address to existing one" />
@@ -126,7 +126,7 @@
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/cucumber/features/shop-purchasing-process.feature" />
       <option name="GLUE" value="pl.coderslab" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="FinalExam" />
+      <module name="MyStoreTest" />
       <option name="NAME_FILTER" value="^User purchase product from online shop$" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^User purchase product from online shop$&quot;" />
       <option name="SUGGESTED_NAME" value="Scenario: User purchase product from online shop" />
@@ -142,7 +142,7 @@
       </method>
     </configuration>
     <configuration name="MyStoreTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="FinalExam" />
+      <module name="MyStoreTest" />
       <option name="PACKAGE_NAME" value="pl.coderslab" />
       <option name="MAIN_CLASS_NAME" value="pl.coderslab.MyStoreTest" />
       <option name="TEST_OBJECT" value="class" />
@@ -176,9 +176,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MyStoreTest" />
         <item itemvalue="Cucumber Java.Scenario: User add first address" />
         <item itemvalue="Cucumber Java.Scenario: User add new address to existing one" />
-        <item itemvalue="JUnit.MyStoreTest" />
         <item itemvalue="Cucumber Java.Scenario: User purchase product from online shop" />
         <item itemvalue="Cucumber Java.Scenario: User adds new address to existing one" />
       </list>
@@ -207,7 +207,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681311706669</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="n/a">
+      <created>1681313432665</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1681313432665</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -223,6 +230,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="finalexam" />
-    <option name="LAST_COMMIT_MESSAGE" value="finalexam" />
+    <MESSAGE value="n/a" />
+    <option name="LAST_COMMIT_MESSAGE" value="n/a" />
   </component>
 </project>
